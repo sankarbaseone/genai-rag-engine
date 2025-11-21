@@ -1,0 +1,7 @@
+# Project requirements
+fastapi
+uvicorn
+chromadb
+ollama
+python-dotenv
+pytest

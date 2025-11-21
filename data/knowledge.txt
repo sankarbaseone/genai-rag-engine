@@ -1,0 +1,2 @@
+# Knowledge base data
+Zerofy Metrics is a sustainability and carbon compliance dashboard for hotels across UAE and India, aligned with CEPA.
