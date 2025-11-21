@@ -23,27 +23,53 @@ GenAI RAG Engine is designed to simplify the creation of advanced AI application
 
 ### Prerequisites
 
-- Python 3.8+
-- [List other prerequisites here]
+- Python 3.9+
+- [Ollama](https://ollama.com/) (for embeddings)
 
 ### Installation
 
-```bash
-git clone https://github.com/sankarbaseone/genai-rag-engine.git
-cd genai-rag-engine
-pip install -r requirements.txt
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sankarbaseone/genai-rag-engine.git
+   cd genai-rag-engine
+   ```
+
+2. Create and activate a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up environment variables:
+   Create a `.env` file in the root directory (if needed).
 
 ## Usage
 
-```python
-# Example usage code snippet
+### Build the Index
+
+To process the knowledge base and create the vector store:
+
+```bash
+python build_index.py
 ```
 
-## Roadmap
+This will read `data/knowledge.txt`, generate embeddings using Ollama, and store them in `vector_store`.
 
-- [ ] Feature 1
-- [ ] Feature 2
+### Running Tests
+
+To run the unit tests:
+
+```bash
+pytest
+```
 
 ## Contributing
 
