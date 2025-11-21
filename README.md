@@ -70,11 +70,3 @@ To run the unit tests:
 ```bash
 pytest
 ```
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
